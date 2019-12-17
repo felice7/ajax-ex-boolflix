@@ -33,7 +33,25 @@
   font-size: 20px;
 }
 
+#risultati {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #risultati ul {
     list-style-type: none;
     font-size: 16px;
+}
+
+.card-film {
+    width: 250px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
 }

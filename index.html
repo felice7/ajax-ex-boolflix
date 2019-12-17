@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <title></title>
@@ -15,10 +16,21 @@
           <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
        </div>
        
-       
-            <div class="container">
+           <main>
                 <div id="risultati"></div>
+            </main>    
+            
+            <script id="film-template" type="text/x-handlebars-template">
+            <div class="card-film">
+                <ul>
+                    <li>Titolo: {{ title }}</li>
+                    <li>Titolo originale: {{ original_title }}</li>
+                    <li>Lingua: {{ language }}</li>
+                    <!-- <li>Voto: {{ rating }}</li> -->
+                    <li>Stelle: {{{ star }}}</li>
+                </ul>
             </div>
+        </script>
         
        
         
